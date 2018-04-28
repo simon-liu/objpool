@@ -135,7 +135,7 @@ class ObjectPool(object):
     def __repr__(self):
         return ("<pool %d: size=%d, len(_set)=%d, semaphore=%d>" %
                 (id(self), self.size, len(self._set),
-                 self._semaphore._Semaphore__value))
+                 self._semaphore._value))
 
     def pool_get(self, blocking=True, timeout=None, create=True, verify=True):
         """Get an object from the pool.
